@@ -7,13 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomeController: UIViewController {
+    @IBOutlet weak var mTable: UITableView!
+    var burgerList = ["Test", "Burger 1"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        mTable.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        mTable.dataSource = self
+    }
+}
+
+extension HomeController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return burgerList.count
     }
 
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
+        return cell
+    }
 }
+
 

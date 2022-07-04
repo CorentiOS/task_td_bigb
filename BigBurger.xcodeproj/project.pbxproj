@@ -14,6 +14,8 @@
 		7139154C2873445F00823D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7139154B2873445F00823D63 /* Assets.xcassets */; };
 		7139154F2873445F00823D63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7139154D2873445F00823D63 /* LaunchScreen.storyboard */; };
 		7139155B287345B200823D63 /* BurgerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7139155A287345B200823D63 /* BurgerResponse.swift */; };
+		7139155F2873469400823D63 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7139155D2873469400823D63 /* HomeTableViewCell.swift */; };
+		713915602873469400823D63 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7139155E2873469400823D63 /* HomeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7139154E2873445F00823D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		713915502873445F00823D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7139155A287345B200823D63 /* BurgerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerResponse.swift; sourceTree = "<group>"; };
+		7139155D2873469400823D63 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewCell.swift; path = View/HomeTableViewCell.swift; sourceTree = "<group>"; };
+		7139155E2873469400823D63 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTableViewCell.xib; path = View/HomeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,18 @@
 		713915412873445C00823D63 /* BigBurger */ = {
 			isa = PBXGroup;
 			children = (
+				7139155C2873467B00823D63 /* View */,
 				71391559287344F200823D63 /* Controller */,
 				71391558287344E900823D63 /* ViewModel */,
 				71391557287344E000823D63 /* Service */,
 				71391556287344D800823D63 /* Model */,
 				713915422873445C00823D63 /* AppDelegate.swift */,
 				713915442873445C00823D63 /* SceneDelegate.swift */,
-				713915482873445C00823D63 /* Main.storyboard */,
 				7139154B2873445F00823D63 /* Assets.xcassets */,
 				7139154D2873445F00823D63 /* LaunchScreen.storyboard */,
 				713915502873445F00823D63 /* Info.plist */,
+				7139155D2873469400823D63 /* HomeTableViewCell.swift */,
+				7139155E2873469400823D63 /* HomeTableViewCell.xib */,
 			);
 			path = BigBurger;
 			sourceTree = "<group>";
@@ -100,6 +106,14 @@
 				713915462873445C00823D63 /* HomeController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7139155C2873467B00823D63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				713915482873445C00823D63 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7139154F2873445F00823D63 /* LaunchScreen.storyboard in Resources */,
+				713915602873469400823D63 /* HomeTableViewCell.xib in Resources */,
 				7139154C2873445F00823D63 /* Assets.xcassets in Resources */,
 				7139154A2873445C00823D63 /* Main.storyboard in Resources */,
 			);
@@ -173,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7139155F2873469400823D63 /* HomeTableViewCell.swift in Sources */,
 				713915472873445C00823D63 /* HomeController.swift in Sources */,
 				7139155B287345B200823D63 /* BurgerResponse.swift in Sources */,
 				713915432873445C00823D63 /* AppDelegate.swift in Sources */,
