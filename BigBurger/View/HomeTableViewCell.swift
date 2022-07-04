@@ -27,8 +27,22 @@ class HomeTableViewCell: UITableViewCell {
     func bind(data: BurgerResponse) {
         cellTitle.text = data.title
         cellDesc.text = data.burgerResponseDescription
-        cellPrice.text = String(data.price)
+        cellPrice.text = formatPrice(price: data.price)
         cellImage.loadFrom(URLAddress: data.thumbnail)
     }
     
+    func formatPrice(price : Int) -> String {
+        var formattedPrice = String(price)
+        let i = formattedPrice.index(formattedPrice.startIndex, offsetBy: formattedPrice.count - 2)
+
+        if(formattedPrice.count >= 3) {
+            formattedPrice.insert(",", at: i)
+            return formattedPrice + "€"
+        }
+        else {
+            formattedPrice.insert(",", at: i)
+            return "0" + formattedPrice + "€"
+
+        }        
+    }
 }

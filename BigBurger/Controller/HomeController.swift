@@ -21,10 +21,7 @@ class HomeController: UIViewController {
         
         URLSession.shared.dataTask(with: api!) {
             data, response, error in
-            if error != nil {
-                print(error ?? "")
-                return
-            }
+            
             do {
                 let result = try JSONDecoder().decode([BurgerResponse].self, from: data!)
                 DispatchQueue.main.async {
