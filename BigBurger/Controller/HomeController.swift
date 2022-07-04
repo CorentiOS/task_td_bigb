@@ -11,8 +11,13 @@ class HomeController: UIViewController {
     @IBOutlet weak var mTable: UITableView!
     var burgerList = ["Test", "Burger 1"]
     
+    let api = API()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        api.getRemoteData()
+        
         mTable.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         mTable.dataSource = self
     }

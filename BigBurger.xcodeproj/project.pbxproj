@@ -67,7 +67,6 @@
 				7139155C2873467B00823D63 /* View */,
 				71391559287344F200823D63 /* Controller */,
 				71391558287344E900823D63 /* ViewModel */,
-				71391557287344E000823D63 /* Service */,
 				71391556287344D800823D63 /* Model */,
 				713915422873445C00823D63 /* AppDelegate.swift */,
 				713915442873445C00823D63 /* SceneDelegate.swift */,
@@ -83,22 +82,15 @@
 		71391556287344D800823D63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7139155A287345B200823D63 /* BurgerResponse.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		71391557287344E000823D63 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				7139156128734E1C00823D63 /* API.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		71391558287344E900823D63 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7139155A287345B200823D63 /* BurgerResponse.swift */,
+				7139156128734E1C00823D63 /* API.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
