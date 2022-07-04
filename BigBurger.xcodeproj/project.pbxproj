@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		713915432873445C00823D63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713915422873445C00823D63 /* AppDelegate.swift */; };
 		713915452873445C00823D63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713915442873445C00823D63 /* SceneDelegate.swift */; };
-		713915472873445C00823D63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713915462873445C00823D63 /* ViewController.swift */; };
+		713915472873445C00823D63 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713915462873445C00823D63 /* HomeController.swift */; };
 		7139154A2873445C00823D63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713915482873445C00823D63 /* Main.storyboard */; };
 		7139154C2873445F00823D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7139154B2873445F00823D63 /* Assets.xcassets */; };
 		7139154F2873445F00823D63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7139154D2873445F00823D63 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		7139153F2873445C00823D63 /* BigBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		713915422873445C00823D63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		713915442873445C00823D63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		713915462873445C00823D63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		713915462873445C00823D63 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		713915492873445C00823D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7139154B2873445F00823D63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7139154E2873445F00823D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		713915412873445C00823D63 /* BigBurger */ = {
 			isa = PBXGroup;
 			children = (
+				71391559287344F200823D63 /* Controller */,
+				71391558287344E900823D63 /* ViewModel */,
+				71391557287344E000823D63 /* Service */,
+				71391556287344D800823D63 /* Model */,
 				713915422873445C00823D63 /* AppDelegate.swift */,
 				713915442873445C00823D63 /* SceneDelegate.swift */,
-				713915462873445C00823D63 /* ViewController.swift */,
 				713915482873445C00823D63 /* Main.storyboard */,
 				7139154B2873445F00823D63 /* Assets.xcassets */,
 				7139154D2873445F00823D63 /* LaunchScreen.storyboard */,
 				713915502873445F00823D63 /* Info.plist */,
 			);
 			path = BigBurger;
+			sourceTree = "<group>";
+		};
+		71391556287344D800823D63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71391557287344E000823D63 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		71391558287344E900823D63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71391559287344F200823D63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				713915462873445C00823D63 /* HomeController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				713915472873445C00823D63 /* ViewController.swift in Sources */,
+				713915472873445C00823D63 /* HomeController.swift in Sources */,
 				713915432873445C00823D63 /* AppDelegate.swift in Sources */,
 				713915452873445C00823D63 /* SceneDelegate.swift in Sources */,
 			);
