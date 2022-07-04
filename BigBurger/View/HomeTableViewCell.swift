@@ -24,8 +24,11 @@ class HomeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func bind() {
-        
+    func bind(data: BurgerResponse) {
+        cellTitle.text = data.title
+        cellDesc.text = data.burgerResponseDescription
+        cellPrice.text = String(data.price)
+        cellImage.loadFrom(URLAddress: data.thumbnail)
     }
     
 }

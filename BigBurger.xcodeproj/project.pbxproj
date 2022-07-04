@@ -17,6 +17,7 @@
 		7139155F2873469400823D63 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7139155D2873469400823D63 /* HomeTableViewCell.swift */; };
 		713915602873469400823D63 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7139155E2873469400823D63 /* HomeTableViewCell.xib */; };
 		7139156228734E1C00823D63 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7139156128734E1C00823D63 /* API.swift */; };
+		7139156528735EEB00823D63 /* UIImageView+LoadURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7139156428735EEB00823D63 /* UIImageView+LoadURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7139155D2873469400823D63 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewCell.swift; path = View/HomeTableViewCell.swift; sourceTree = "<group>"; };
 		7139155E2873469400823D63 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTableViewCell.xib; path = View/HomeTableViewCell.xib; sourceTree = "<group>"; };
 		7139156128734E1C00823D63 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7139156428735EEB00823D63 /* UIImageView+LoadURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		713915412873445C00823D63 /* BigBurger */ = {
 			isa = PBXGroup;
 			children = (
+				7139156328735ECA00823D63 /* Extensions */,
 				7139155C2873467B00823D63 /* View */,
 				71391559287344F200823D63 /* Controller */,
 				71391558287344E900823D63 /* ViewModel */,
@@ -109,6 +112,14 @@
 				713915482873445C00823D63 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7139156328735ECA00823D63 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7139156428735EEB00823D63 /* UIImageView+LoadURL.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			files = (
 				7139155F2873469400823D63 /* HomeTableViewCell.swift in Sources */,
 				713915472873445C00823D63 /* HomeController.swift in Sources */,
+				7139156528735EEB00823D63 /* UIImageView+LoadURL.swift in Sources */,
 				7139155B287345B200823D63 /* BurgerResponse.swift in Sources */,
 				713915432873445C00823D63 /* AppDelegate.swift in Sources */,
 				7139156228734E1C00823D63 /* API.swift in Sources */,

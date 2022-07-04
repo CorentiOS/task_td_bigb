@@ -5,8 +5,8 @@
 
 import Foundation
 
-// MARK: - BurgerResponseElement
-struct BurgerResponseElement: Codable {
+// MARK: - BurgerResponse
+struct BurgerResponse: Codable {
     let ref, title, burgerResponseDescription: String
     let thumbnail: String
     let price: Int
@@ -17,5 +17,3 @@ struct BurgerResponseElement: Codable {
         case thumbnail, price
     }
 }
-
-typealias BurgerResponse = [BurgerResponseElement]

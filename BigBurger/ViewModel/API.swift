@@ -10,20 +10,20 @@ import Foundation
 struct API {
     let api = URL(string: "https://uad.io/bigburger/")
     
-        func getRemoteData() {
+    func getRemoteData(callbback : (BurgerResponse) -> ()) {
             
             URLSession.shared.dataTask(with: api!) {
                 data, response, error in
                 if error != nil {
-                    print(error)
+                    print(error ?? "error")
                     return
                 }
                 do {
-                    let result = try JSONDecoder().decode(BurgerResponse.self, from: data!)
-                    print(result)
+                    _ = try JSONDecoder().decode(BurgerResponse.self, from: data!)
+                    print("Data OK")
                 }
                 catch {
-                    print("error")
+                    print("error \(error)")
                 }
             }.resume()
         }
