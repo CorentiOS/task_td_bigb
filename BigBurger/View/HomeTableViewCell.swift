@@ -8,7 +8,11 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellTitle: UILabel!
+    @IBOutlet weak var cellDesc: UILabel!
+    @IBOutlet weak var cellPrice: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +22,10 @@ class HomeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func bind() {
+        
     }
     
 }
