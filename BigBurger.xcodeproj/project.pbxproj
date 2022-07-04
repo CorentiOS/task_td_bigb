@@ -31,7 +31,7 @@
 		713915502873445F00823D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7139155A287345B200823D63 /* BurgerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerResponse.swift; sourceTree = "<group>"; };
 		7139155D2873469400823D63 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewCell.swift; path = View/HomeTableViewCell.swift; sourceTree = "<group>"; };
-		7139155E2873469400823D63 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTableViewCell.xib; path = View/HomeTableViewCell.xib; sourceTree = "<group>"; };
+		7139155E2873469400823D63 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		7139156128734E1C00823D63 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7139156428735EEB00823D63 /* UIImageView+LoadURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,6 @@
 				7139154D2873445F00823D63 /* LaunchScreen.storyboard */,
 				713915502873445F00823D63 /* Info.plist */,
 				7139155D2873469400823D63 /* HomeTableViewCell.swift */,
-				7139155E2873469400823D63 /* HomeTableViewCell.xib */,
 			);
 			path = BigBurger;
 			sourceTree = "<group>";
@@ -110,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				713915482873445C00823D63 /* Main.storyboard */,
+				7139155E2873469400823D63 /* HomeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
